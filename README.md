@@ -1,2 +1,1 @@
-# Calculator
-A calculator app for basic arithmetic built using HTML, CSS and JavaScript
+A stylish, responsive web-based calculator built with HTML, CSS, and JavaScript. This calculator supports basic arithmetic operations and includes a dynamic theme switcher with Light, Dark, Blue, Green, and Purple modes for a personalized look. It leverages the Math.js library for accurate expression evaluation and supports both button clicks and keyboard input. Designed with modern UI principles and smooth transitions, it's perfect for educational purposes, practice projects, or as a starting point for more advanced calculators. Fully functional, mobile-friendly, and easy to customize. Try it, use it, or build upon it!
