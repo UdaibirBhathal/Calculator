@@ -1,0 +1,196 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background 0.5s, color 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator-wrapper {
+  text-align: center;
+}
+
+/* Theme switcher buttons */
+.theme-switcher {
+  margin-bottom: 20px;
+}
+.theme-switcher button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.theme-switcher button:hover {
+  opacity: 0.9;
+}
+
+/* Calculator styling */
+#cal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  border-collapse: separate;
+  border-spacing: 10px;
+  transition: background 0.5s;
+}
+
+#result {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  padding-right: 10px;
+  margin-right: 10px; /* Add space between result and clear button */
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Button styling */
+input[type="button"] {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="button"]:hover {
+  background-color: #e0e0e0;
+}
+
+input[type="button"]:active {
+  background-color: #ccc;
+}
+
+input[type="button"][value="c"] {
+  background-color: #e74c3c;
+  margin-left: 10px;
+  color: white;
+}
+input[type="button"][value="="] {
+  background-color: #27ae60;
+  color: white;
+}
+input[type="button"][value="c"]:hover {
+  background-color: #c0392b;
+}
+input[type="button"][value="="]:hover {
+  background-color: #229954;
+}
+
+/* ===== THEMES ===== */
+
+/* Light Theme */
+.light-theme {
+  background-color: #f2f2f2;
+  color: #333;
+}
+.light-theme .theme-switcher button {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+}
+.dark-theme #cal {
+  background-color: #2e2e2e;
+}
+.dark-theme #result {
+  background-color: #444;
+  color: #f1f1f1;
+  border-color: #666;
+}
+.dark-theme input[type="button"] {
+  background-color: #555;
+  color: #f1f1f1;
+}
+.dark-theme .theme-switcher button {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Blue Theme */
+.blue-theme {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+.blue-theme #cal {
+  background-color: #bbdefb;
+}
+.blue-theme #result {
+  background-color: #e1f5fe;
+  color: #0d47a1;
+}
+.blue-theme input[type="button"] {
+  background-color: #90caf9;
+  color: #0d47a1;
+}
+.blue-theme .theme-switcher button {
+  background-color: #64b5f6;
+  color: #fff;
+}
+
+/* Green Theme */
+.green-theme {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+.green-theme #cal {
+  background-color: #c8e6c9;
+}
+.green-theme #result {
+  background-color: #dcedc8;
+  color: #1b5e20;
+  border-color: #81c784;
+}
+.green-theme input[type="button"] {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+}
+.green-theme input[type="button"]:hover {
+  background-color: #81c784;
+}
+.green-theme .theme-switcher select {
+  background-color: #a5d6a7;
+  color: #1b5e20;
+}
+
+/* Purple Theme */
+.purple-theme {
+  background-color: #f3e5f5;
+  color: #4a148c;
+}
+.purple-theme #cal {
+  background-color: #e1bee7;
+}
+.purple-theme #result {
+  background-color: #f8bbd0;
+  color: #4a148c;
+  border-color: #ba68c8;
+}
+.purple-theme input[type="button"] {
+  background-color: #ce93d8;
+  color: #4a148c;
+}
+.purple-theme input[type="button"]:hover {
+  background-color: #ba68c8;
+}
+.purple-theme .theme-switcher select {
+  background-color: #ce93d8;
+  color: #4a148c;
+}
